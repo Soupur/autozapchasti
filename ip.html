@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автозапчасти - Интернет-магазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Магазин Автозапчастей</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      <a href="#cart">Корзина (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="catalog">
+      <h2>Каталог запчастей</h2>
+
+      <div class="product-grid">
+        <!-- Здесь будут карточки товаров -->
+      </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+        <h2>Корзина</h2>
+        <div id="cart-items">
+          <!-- Здесь будут элементы корзины -->
+        </div>
+        <div id="cart-summary" style="display: none;">
+          <p>Итого: <span id="cart-total">0.00</span> руб</p>
+          <button id="checkout-button">Оформить заказ</button>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Магазин Автозапчастей. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
